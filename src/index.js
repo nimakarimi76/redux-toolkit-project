@@ -2,17 +2,8 @@ import React from "react";
 import ReactDOM from "react-dom/client";
 import App from "./App";
 import reportWebVitals from "./reportWebVitals";
-import { configureStore } from "@reduxjs/toolkit";
 import { Provider } from "react-redux";
-import userReducer from "./features/user/user";
-import themeReducer from "./features/user/theme";
-
-const store = configureStore({
-  reducer: {
-    user: userReducer,
-    theme: themeReducer,
-  },
-});
+import { store } from "./store.js";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
