@@ -1,8 +1,8 @@
 import "./App.css";
 import React from "react";
-import Profile from "./components/Profile";
-import Login from "./components/Login";
-import ChangeTheme from "./components/ChangeTheme";
+import Profile from "./components/user/Profile";
+import Login from "./components/user/Login";
+import ChangeTheme from "./components/user/ChangeTheme";
 
 function App() {
   return (
